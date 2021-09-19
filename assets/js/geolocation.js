@@ -1,7 +1,7 @@
 let dataCOVID = null;
 async function getDataCovidRequest() {
     if (null == dataCOVID) {
-        const t = "https://www.geocovid.com/data",
+        const t = "https://geocovidtest.herokuapp.com/data",
             e = await fetch(t);
         dataCOVID = await e.json()
     }
